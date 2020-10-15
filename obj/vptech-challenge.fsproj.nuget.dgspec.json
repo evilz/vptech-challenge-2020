@@ -1,0 +1,86 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\PROJECTS\\GITHUB\\vptech-challenge-2020\\vptech-challenge.fsproj": {}
+  },
+  "projects": {
+    "E:\\PROJECTS\\GITHUB\\vptech-challenge-2020\\vptech-challenge.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\PROJECTS\\GITHUB\\vptech-challenge-2020\\vptech-challenge.fsproj",
+        "projectName": "vptech-challenge",
+        "projectPath": "E:\\PROJECTS\\GITHUB\\vptech-challenge-2020\\vptech-challenge.fsproj",
+        "packagesPath": "C:\\Users\\Evilz\\.nuget\\packages\\",
+        "outputPath": "E:\\PROJECTS\\GITHUB\\vptech-challenge-2020\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Evilz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "generatePathProperty": true
+            },
+            "FSharp.SystemTextJson": {
+              "target": "Package",
+              "version": "[0.14.8, )",
+              "generatePathProperty": true
+            },
+            "Giraffe": {
+              "target": "Package",
+              "version": "[5.0.0-alpha-003, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.7.20366.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

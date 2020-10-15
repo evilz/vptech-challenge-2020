@@ -1,0 +1,5953 @@
+[
+  {
+    "id": 41435,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 3,
+          "x": 1,
+          "neutral": true
+        }
+      ]
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:44:24 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 13"
+    ],
+    "responseBody": {
+      "move": "up"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41437,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 2,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 6,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 3,
+          "x": 2,
+          "neutral": true
+        }
+      ]
+    },
+    "responseCode": null,
+    "responseHeaders": null,
+    "responseBody": null,
+    "errorMessage": "HttpClient: Can't load http://176.174.250.83:5000/move - Operation timed out after 3001 milliseconds with 0 bytes received"
+  },
+  {
+    "id": 41439,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 2,
+          "x": 1
+        },
+        "previous": {
+          "y": 2,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 6,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 3,
+          "x": 3,
+          "neutral": true
+        }
+      ]
+    },
+    "responseCode": null,
+    "responseHeaders": null,
+    "responseBody": null,
+    "errorMessage": "HttpClient: Can't load http://176.174.250.83:5000/move - Operation timed out after 3000 milliseconds with 0 bytes received"
+  },
+  {
+    "id": 41440,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 2,
+          "x": 1
+        },
+        "previous": {
+          "y": 2,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 6,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 3,
+          "x": 2,
+          "neutral": true
+        },
+        {
+          "y": 3,
+          "x": 5,
+          "neutral": true
+        }
+      ]
+    },
+    "responseCode": null,
+    "responseHeaders": null,
+    "responseBody": null,
+    "errorMessage": "HttpClient: Can't load http://176.174.250.83:5000/move - Operation timed out after 3000 milliseconds with 0 bytes received"
+  },
+  {
+    "id": 41441,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 2,
+          "x": 1
+        },
+        "previous": {
+          "y": 2,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 6,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 4,
+          "x": 2,
+          "neutral": true
+        },
+        {
+          "y": 4,
+          "x": 5,
+          "neutral": true
+        }
+      ]
+    },
+    "responseCode": null,
+    "responseHeaders": null,
+    "responseBody": null,
+    "errorMessage": "HttpClient: Can't load http://176.174.250.83:5000/move - Operation timed out after 3000 milliseconds with 0 bytes received"
+  },
+  {
+    "id": 41442,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 2,
+          "x": 1
+        },
+        "previous": {
+          "y": 2,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 6,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 5,
+          "x": 5,
+          "neutral": true
+        },
+        {
+          "y": 5,
+          "x": 2,
+          "neutral": true
+        },
+        {
+          "y": 5,
+          "x": 5,
+          "neutral": true
+        }
+      ]
+    },
+    "responseCode": null,
+    "responseHeaders": null,
+    "responseBody": null,
+    "errorMessage": "HttpClient: Can't load http://176.174.250.83:5000/move - Operation timed out after 3001 milliseconds with 0 bytes received"
+  },
+  {
+    "id": 41443,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 2,
+          "x": 1
+        },
+        "previous": {
+          "y": 2,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 6,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 6,
+          "x": 5,
+          "neutral": true
+        },
+        {
+          "y": 6,
+          "x": 2,
+          "neutral": true
+        },
+        {
+          "y": 6,
+          "x": 5,
+          "neutral": true
+        }
+      ]
+    },
+    "responseCode": null,
+    "responseHeaders": null,
+    "responseBody": null,
+    "errorMessage": "HttpClient: Can't load http://176.174.250.83:5000/move - Operation timed out after 3001 milliseconds with 0 bytes received"
+  },
+  {
+    "id": 41444,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 2,
+          "x": 1
+        },
+        "previous": {
+          "y": 2,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 6,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:44:44 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 13"
+    ],
+    "responseBody": {
+      "move": "up"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41445,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 1,
+          "x": 1
+        },
+        "previous": {
+          "y": 2,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 5,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 3,
+          "x": 5,
+          "neutral": true
+        }
+      ]
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:44:45 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 21"
+    ],
+    "responseBody": {
+      "move": "fire-right"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41446,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 1,
+          "x": 1
+        },
+        "previous": {
+          "y": 2,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 5,
+          "x2": 5
+        },
+        "fire": false
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 5,
+          "x": 5,
+          "neutral": true
+        }
+      ]
+    },
+    "responseCode": null,
+    "responseHeaders": null,
+    "responseBody": null,
+    "errorMessage": "HttpClient: Can't load http://176.174.250.83:5000/move - Operation timed out after 3001 milliseconds with 0 bytes received"
+  },
+  {
+    "id": 41447,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 1,
+          "x": 1
+        },
+        "previous": {
+          "y": 1,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 5,
+          "x2": 5
+        },
+        "fire": false
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:22 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 16"
+    ],
+    "responseBody": {
+      "move": "right"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41448,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 1,
+          "x": 2
+        },
+        "previous": {
+          "y": 1,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 5,
+          "x2": 6
+        },
+        "fire": false
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 0,
+            "x": 6
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 6
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:23 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "down"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41449,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 2,
+          "x": 2
+        },
+        "previous": {
+          "y": 1,
+          "x": 2
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 6,
+          "x2": 6
+        },
+        "fire": false
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 0,
+            "x": 6
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 6
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 5,
+          "x": 3,
+          "neutral": false
+        }
+      ]
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:24 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "down"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41450,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 2
+        },
+        "previous": {
+          "y": 2,
+          "x": 2
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 6
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 0,
+            "x": 6
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 6
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 7,
+          "x": 5,
+          "neutral": false
+        },
+        {
+          "y": 6,
+          "x": 3,
+          "neutral": false
+        }
+      ]
+    },
+    "responseCode": null,
+    "responseHeaders": null,
+    "responseBody": null,
+    "errorMessage": "HttpClient: Can't load http://176.174.250.83:5000/move - Operation timed out after 3001 milliseconds with 0 bytes received"
+  },
+  {
+    "id": 41451,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 2
+        },
+        "previous": {
+          "y": 3,
+          "x": 2
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 6
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 0,
+            "x": 6
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 6
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 7,
+          "x": 6,
+          "neutral": false
+        },
+        {
+          "y": 7,
+          "x": 3,
+          "neutral": false
+        }
+      ]
+    },
+    "responseCode": null,
+    "responseHeaders": null,
+    "responseBody": null,
+    "errorMessage": "HttpClient: Can't load http://176.174.250.83:5000/move - Operation timed out after 3001 milliseconds with 0 bytes received"
+  },
+  {
+    "id": 41452,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 2
+        },
+        "previous": {
+          "y": 3,
+          "x": 2
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 6
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 0,
+            "x": 6
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 6
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 7,
+          "x": 2,
+          "neutral": false
+        }
+      ]
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:31 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 20"
+    ],
+    "responseBody": {
+      "move": "fire-down"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41453,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 2
+        },
+        "previous": {
+          "y": 3,
+          "x": 2
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 6
+        },
+        "fire": false
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 0,
+            "x": 6
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 6
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:32 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "down"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41454,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 4,
+          "x": 2
+        },
+        "previous": {
+          "y": 3,
+          "x": 2
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 8,
+          "x2": 6
+        },
+        "fire": false
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 0,
+            "x": 6
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 6
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          },
+          {
+            "y": 8,
+            "x": 0
+          },
+          {
+            "y": 8,
+            "x": 1
+          },
+          {
+            "y": 8,
+            "x": 2
+          },
+          {
+            "y": 8,
+            "x": 3
+          },
+          {
+            "y": 8,
+            "x": 4
+          },
+          {
+            "y": 8,
+            "x": 5
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:33 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 16"
+    ],
+    "responseBody": {
+      "move": "right"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41455,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 4,
+          "x": 2
+        },
+        "previous": {
+          "y": 4,
+          "x": 2
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 8,
+          "x2": 6
+        },
+        "fire": false
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 0,
+            "x": 6
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 6
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          },
+          {
+            "y": 8,
+            "x": 0
+          },
+          {
+            "y": 8,
+            "x": 1
+          },
+          {
+            "y": 8,
+            "x": 2
+          },
+          {
+            "y": 8,
+            "x": 3
+          },
+          {
+            "y": 8,
+            "x": 4
+          },
+          {
+            "y": 8,
+            "x": 5
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:34 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 13"
+    ],
+    "responseBody": {
+      "move": "up"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41456,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 2
+        },
+        "previous": {
+          "y": 4,
+          "x": 2
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 6
+        },
+        "fire": false
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 0,
+            "x": 6
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 6
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:35 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "left"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41457,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 2
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:36 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "left"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41458,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:37 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "down"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41459,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:38 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "left"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41460,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:39 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 16"
+    ],
+    "responseBody": {
+      "move": "right"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41461,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 2
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 6
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 0,
+            "x": 6
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 6
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:40 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "down"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41462,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 4,
+          "x": 2
+        },
+        "previous": {
+          "y": 3,
+          "x": 2
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 8,
+          "x2": 6
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 0,
+            "x": 6
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 6
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          },
+          {
+            "y": 8,
+            "x": 0
+          },
+          {
+            "y": 8,
+            "x": 1
+          },
+          {
+            "y": 8,
+            "x": 2
+          },
+          {
+            "y": 8,
+            "x": 3
+          },
+          {
+            "y": 8,
+            "x": 4
+          },
+          {
+            "y": 8,
+            "x": 5
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:41 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 13"
+    ],
+    "responseBody": {
+      "move": "up"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41463,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 2
+        },
+        "previous": {
+          "y": 4,
+          "x": 2
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 6
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 0,
+            "x": 6
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 6
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:42 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "left"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41464,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 2
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:43 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "down"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41465,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 2,
+          "x": 5,
+          "neutral": false
+        }
+      ]
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:44 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "left"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41466,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 1,
+          "x": 5,
+          "neutral": false
+        },
+        {
+          "y": 7,
+          "x": 5,
+          "neutral": false
+        }
+      ]
+    },
+    "responseCode": null,
+    "responseHeaders": null,
+    "responseBody": null,
+    "errorMessage": "HttpClient: Can't load http://176.174.250.83:5000/move - Operation timed out after 3000 milliseconds with 0 bytes received"
+  },
+  {
+    "id": 41467,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 2,
+          "x": 5,
+          "neutral": false
+        },
+        {
+          "y": 6,
+          "x": 5,
+          "neutral": false
+        }
+      ]
+    },
+    "responseCode": null,
+    "responseHeaders": null,
+    "responseBody": null,
+    "errorMessage": "HttpClient: Can't load http://176.174.250.83:5000/move - Operation timed out after 3001 milliseconds with 0 bytes received"
+  },
+  {
+    "id": 41468,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 3,
+          "x": 5,
+          "neutral": false
+        },
+        {
+          "y": 5,
+          "x": 5,
+          "neutral": false
+        }
+      ]
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:51 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 21"
+    ],
+    "responseBody": {
+      "move": "fire-right"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41469,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 5
+        },
+        "fire": false
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 4,
+          "x": 5,
+          "neutral": false
+        },
+        {
+          "y": 4,
+          "x": 5,
+          "neutral": false
+        }
+      ]
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:52 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "down"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41470,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 5
+        },
+        "fire": false
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 5,
+          "x": 5,
+          "neutral": false
+        },
+        {
+          "y": 3,
+          "x": 5,
+          "neutral": false
+        }
+      ]
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:53 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "left"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41471,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 5
+        },
+        "fire": false
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 6,
+          "x": 5,
+          "neutral": false
+        },
+        {
+          "y": 2,
+          "x": 5,
+          "neutral": false
+        }
+      ]
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:54 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "left"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41472,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 5
+        },
+        "fire": false
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": [
+        {
+          "y": 7,
+          "x": 5,
+          "neutral": false
+        },
+        {
+          "y": 1,
+          "x": 5,
+          "neutral": false
+        }
+      ]
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:55 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "left"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41473,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:56 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "left"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41474,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 3,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 7,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          },
+          {
+            "y": 7,
+            "x": 0
+          },
+          {
+            "y": 7,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:57 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 13"
+    ],
+    "responseBody": {
+      "move": "up"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41475,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 2,
+          "x": 1
+        },
+        "previous": {
+          "y": 3,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 6,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:58 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 15"
+    ],
+    "responseBody": {
+      "move": "left"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41476,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 2,
+          "x": 1
+        },
+        "previous": {
+          "y": 2,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 6,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          },
+          {
+            "y": 6,
+            "x": 0
+          },
+          {
+            "y": 6,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:45:59 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 13"
+    ],
+    "responseBody": {
+      "move": "up"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41477,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 1,
+          "x": 1
+        },
+        "previous": {
+          "y": 2,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 5,
+          "x2": 5
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:46:00 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 16"
+    ],
+    "responseBody": {
+      "move": "right"
+    },
+    "errorMessage": null
+  },
+  {
+    "id": 41479,
+    "gameUuid": "73db8db6-2005-4f08-abba-630233a11c45",
+    "playerUuid": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+    "requestUrl": "http://176.174.250.83:5000/move",
+    "requestHeaders": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "requestBody": {
+      "game": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483"
+      },
+      "player": {
+        "id": "785c8a03-672c-4a40-ace3-5e7a110d1483",
+        "name": "Evilz",
+        "position": {
+          "y": 1,
+          "x": 2
+        },
+        "previous": {
+          "y": 1,
+          "x": 1
+        },
+        "area": {
+          "y1": 0,
+          "x1": 0,
+          "y2": 5,
+          "x2": 6
+        },
+        "fire": true
+      },
+      "board": {
+        "size": {
+          "height": 15,
+          "width": 30
+        },
+        "walls": [
+          {
+            "y": 0,
+            "x": 0
+          },
+          {
+            "y": 0,
+            "x": 1
+          },
+          {
+            "y": 0,
+            "x": 2
+          },
+          {
+            "y": 0,
+            "x": 3
+          },
+          {
+            "y": 0,
+            "x": 4
+          },
+          {
+            "y": 0,
+            "x": 5
+          },
+          {
+            "y": 0,
+            "x": 6
+          },
+          {
+            "y": 1,
+            "x": 0
+          },
+          {
+            "y": 1,
+            "x": 4
+          },
+          {
+            "y": 2,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 0
+          },
+          {
+            "y": 3,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 0
+          },
+          {
+            "y": 4,
+            "x": 1
+          },
+          {
+            "y": 4,
+            "x": 3
+          },
+          {
+            "y": 4,
+            "x": 4
+          },
+          {
+            "y": 4,
+            "x": 6
+          },
+          {
+            "y": 5,
+            "x": 0
+          },
+          {
+            "y": 5,
+            "x": 4
+          }
+        ]
+      },
+      "players": [],
+      "enemies": []
+    },
+    "responseCode": 200,
+    "responseHeaders": [
+      "HTTP/1.1 200 OK",
+      "Date: Thu, 15 Oct 2020 20:46:01 GMT",
+      "Content-Type: application/json; charset=utf-8",
+      "Server: Kestrel",
+      "Content-Length: 16"
+    ],
+    "responseBody": {
+      "move": "right"
+    },
+    "errorMessage": null
+  }
+]
