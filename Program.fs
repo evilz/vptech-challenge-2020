@@ -78,7 +78,8 @@ open FSharp.Control.Tasks.V2.ContextInsensitive
 open Giraffe.Serialization
 open System.Text.Json
 open System.Text.Json.Serialization
-
+open Giraffe.SerilogExtensions
+open Serilog
 
 
 let webApp =
@@ -87,9 +88,19 @@ let webApp =
         POST >=> route "/move"       >=> Handlers.moveHandler
         RequestErrors.NOT_FOUND "What do you want ???" ]
 
+let appWithLogger = SerilogAdapter.Enable(webApp)
+
 let configureApp (app : IApplicationBuilder) =
     // Add Giraffe to the ASP.NET Core pipeline
-    app.UseGiraffe webApp
+    app.UseGiraffe appWithLogger
+
+
+Log.Logger <- 
+  LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .Destructure.FSharpTypes()
+    .WriteTo.Console(Logging.VeepeeJsonFormatter())
+    .CreateLogger()
 
 let configureServices (services : IServiceCollection) =
     // Add Giraffe dependencies

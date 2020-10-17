@@ -4,6 +4,8 @@ open System
 open Giraffe
 open FSharp.Control.Tasks.V2.ContextInsensitive
 open Microsoft.AspNetCore.Http
+open Giraffe.SerilogExtensions
+open Serilog
 
 
 
@@ -15,24 +17,22 @@ let moveHandler : HttpHandler =
     fun (next : HttpFunc) (ctx : HttpContext) ->
         task {
 
-            let! current = ctx.BindJsonAsync<State>()
-
+            let logger = ctx.Logger()
             let serialize = ctx.GetJsonSerializer().SerializeToString
             let deserialize (text:string) = ctx.GetJsonSerializer().Deserialize<State>(text)
 
+            let! current = ctx.BindJsonAsync<State>()
             let previous = current.Game.Id.ToString() |> State.load deserialize
 
             let state = match previous with
                         | Some prev -> current |> State.mergeWith prev 
-                        | none -> current
-
-            state |> State.printMatrix
+                        | None -> current
 
             state |> State.save serialize
-            // TODO: use Ilogger 
-            //printfn "%A" request
-            let move = Agent.getMove state
-            printfn "Move : %A" move
+
+            let move = Agent.getMove state logger
+            logger.Information("Move : {@Move}", move)
+
             let response :MoveResponse = { Move = move}
             return! json response next ctx
           

@@ -37,4 +37,12 @@ E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\FSharp.SystemTe
 E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\Giraffe.ViewEngine.dll
 E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\appsettings.json
+E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\Test-VISIT-LEFT-TOP-WALL.json
+E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\a736d1ae-bc5a-483b-8363-445bf5818ea4.json
+E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\d271d18e-aa02-4980-847c-6e290ab3fbe4.json
+E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\d953c1f8-f946-4afb-9fb9-3defa7744c66.json
+E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\Fable.Remoting.Json.dll
+E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\Giraffe.SerilogExtensions.dll
+E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\Serilog.dll
+E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\Serilog.Sinks.Console.dll
 E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\785c8a03-672c-4a40-ace3-5e7a110d1483.json

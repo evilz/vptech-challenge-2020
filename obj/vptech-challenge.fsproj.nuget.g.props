@@ -17,7 +17,9 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\Evilz\.nuget\packages\fsharp.core\4.7.2</PkgFSharp_Core>
+    <PkgSerilog_Sinks_Console Condition=" '$(PkgSerilog_Sinks_Console)' == '' ">C:\Users\Evilz\.nuget\packages\serilog.sinks.console\3.1.1</PkgSerilog_Sinks_Console>
     <PkgGiraffe Condition=" '$(PkgGiraffe)' == '' ">C:\Users\Evilz\.nuget\packages\giraffe\5.0.0-alpha-003</PkgGiraffe>
+    <PkgGiraffe_SerilogExtensions Condition=" '$(PkgGiraffe_SerilogExtensions)' == '' ">C:\Users\Evilz\.nuget\packages\giraffe.serilogextensions\1.3.0</PkgGiraffe_SerilogExtensions>
     <PkgFSharp_SystemTextJson Condition=" '$(PkgFSharp_SystemTextJson)' == '' ">C:\Users\Evilz\.nuget\packages\fsharp.systemtextjson\0.14.8</PkgFSharp_SystemTextJson>
   </PropertyGroup>
 </Project>
