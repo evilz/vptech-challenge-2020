@@ -46,3 +46,4 @@ E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\Giraffe.Serilog
 E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\Serilog.dll
 E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\Serilog.Sinks.Console.dll
 E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\785c8a03-672c-4a40-ace3-5e7a110d1483.json
+E:\PROJECTS\GITHUB\vptech-challenge-2020\bin\Debug\netcoreapp3.1\d2577e2f-db05-4044-a68a-672c0a752305.json
