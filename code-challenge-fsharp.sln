@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "vptech-challenge", "vptech-challenge.fsproj", "{164216F1-8CF0-439E-96C2-0A44AE8B5240}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "tests", "tests\tests.fsproj", "{0497ACD2-08DE-4DB3-89E7-9EB46B2CF992}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{164216F1-8CF0-439E-96C2-0A44AE8B5240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{164216F1-8CF0-439E-96C2-0A44AE8B5240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{164216F1-8CF0-439E-96C2-0A44AE8B5240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{164216F1-8CF0-439E-96C2-0A44AE8B5240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0497ACD2-08DE-4DB3-89E7-9EB46B2CF992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0497ACD2-08DE-4DB3-89E7-9EB46B2CF992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0497ACD2-08DE-4DB3-89E7-9EB46B2CF992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0497ACD2-08DE-4DB3-89E7-9EB46B2CF992}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

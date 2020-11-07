@@ -1,39 +1,13 @@
-module Types
+module CodeChallenge.Types
 open System
 open System.IO
 open Serilog
 open System.Text
 
-/// bind
-let inline (>>=) x f = Option.bind f x
-
-/// orElseWith
-let inline (<|>) x f = Option.orElseWith f x
-
-
-
-type Line = | Row | Column
-
 
 type Game = { Id: string }// Unified unique ID of the game
 type Position = { Y: int; X: int }
 type EnemyPosition = { Y: int; X: int;Neutral:bool }
-
-module EnemyPosition =
-    let position enemy = { Y = enemy.Y; X = enemy.X }
-
-
-module Distance = 
-    let diff (p1:Position) (p2:Position) = abs(p2.X - p1.X) , abs(p2.Y - p1.Y)
-
-    let isInSameLine (p1:Position) (p2:Position) = 
-        if p1.X = p2.X  then Some Column
-        elif p1.Y = p2.Y then Some Row
-        else None
-
-    let manhattan (p1:Position) (p2:Position) = p2.X - p1.X + p2.Y - p1.Y
-
-    let euclidien (p1:Position) (p2:Position) = sqrt ((float p2.X - float p1.X)**2. + (float p2.Y - float p1.Y)**2.)
 
 type Area = { Y1: int ;X1: int;Y2: int;X2: int}
 type Player = { // Object - player data
@@ -52,6 +26,16 @@ type  Board= { // Object - board data
 }
 
 
+type State = {
+        Game: Game // Object - game data
+        Player: Player
+        Board: Board
+        Players: Position list // Array - other players positions
+        Enemies: EnemyPosition list // Array - enemies positions
+}
+
+
+
 type Cell = 
     | Wall
     | Me
@@ -61,14 +45,6 @@ type Cell =
     | Unknown
 
 type Matrix = Cell[,]
-
-type State = {
-        Game: Game // Object - game data
-        Player: Player
-        Board: Board
-        Players: Position list // Array - other players positions
-        Enemies: EnemyPosition list // Array - enemies positions
-}
 
 
 type Move = 
@@ -81,6 +57,32 @@ type Move =
  | ``Fire-right``
  | ``Fire-left``
  | Idle
+
+type Line = | Row | Column
+
+module EnemyPosition =
+    let position enemy = { Y = enemy.Y; X = enemy.X }
+
+
+module Distance = 
+    let diff (p1:Position) (p2:Position) = abs(p2.X - p1.X) , abs(p2.Y - p1.Y)
+
+    let isInSameLine (p1:Position) (p2:Position) = 
+        if p1.X = p2.X  then Some Column
+        elif p1.Y = p2.Y then Some Row
+        else None
+
+    let manhattan (p1:Position) (p2:Position) = abs(p2.X - p1.X) + abs(p2.Y - p1.Y)
+
+    let euclidien (p1:Position) (p2:Position) = sqrt ((float p2.X - float p1.X)**2. + (float p2.Y - float p1.Y)**2.)
+
+
+/// bind
+let inline (>>=) x f = Option.bind f x
+
+/// orElseWith
+let inline (<|>) x f = Option.orElseWith f x
+
 
 
 [<AutoOpen>]
@@ -146,7 +148,7 @@ module Matrix =
                 | Enemy _ -> "🎃"
                 | WasSeen _ -> "⬛"
                 | Unknown -> "⬜"
-        sprintf "%s" s
+        sprintf "%s" s  
 
     open System.Collections.Generic
     open System.Runtime.CompilerServices
@@ -200,10 +202,13 @@ module State =
         with ex -> 
             None
     
+    
     let isValidPosition state (p:Position) = 
         p.X >= 0 && p.Y >= 0 &&
         p.X < state.Board.Size.Width && p.Y < state.Board.Size.Height &&
         not <| List.contains p state.Board.Walls 
+
+   
 
     let hasWallInLines state p1 p2 = 
         let wallInLine = 
@@ -263,15 +268,13 @@ module State =
         abstract Walls : Position list
         abstract Position : Position 
         abstract IsValidPosition : Position -> bool
+        abstract IsSafePosition : Position -> bool
+        abstract IsValidAndSafePosition : Position -> bool
         abstract HasWallInLines : Position -> Position -> bool
-        // abstract ViewSize = viewSize state
         abstract GetCross : Position -> Position list
         abstract GetNeighbours : Position -> seq<Position>
         abstract FindPath: Position -> Position[] option
-        // abstract TryLeftOrRight = tryLeftOrRight state
-        // abstract TryTopOrBottom = tryTopOrBottom state
         abstract StepTo: Position -> Move option
-        abstract StepToValid: Position -> Move option
         abstract StepLeftRight: Position -> Move option
         abstract StepTopDown: Position -> Move option
         abstract BoardSize: Size
@@ -286,11 +289,12 @@ module State =
         abstract TryGoUp : Move option
         abstract TryGoDown : Move option
 
-        abstract Shoot : Position -> Move option
-
         abstract Debug: (string *  obj[]) -> unit
         abstract Info: (string *  obj[]) -> unit
 
+        abstract IsPlayer : Position -> bool
+        abstract IsAggressiveEnemy : Position -> bool
+        abstract IsNeutral : Position -> bool
 
 
 
@@ -306,18 +310,34 @@ module State =
             member this.Walls = state.Board.Walls
             member this.Position = state.Player.Position
             member this.IsValidPosition position = isValidPosition state position
+
+            member this.IsSafePosition (p:Position) = 
+                    let distance = (Distance.manhattan p)
+                    let isInSameLine = (Distance.isInSameLine p)
+//                    if this.CanFire
+//                    then 
+//                        this.AggressiveEnemies |> List.map distance |> List.forall (fun x-> x >= 2)
+//                        &&  this.Players |> List.map distance |> List.forall (fun x-> x >= 2)
+//                    else 
+                    this.AggressiveEnemies |> List.map distance |> List.forall (fun x-> x >= 2)
+                    &&  this.Players |> List.map distance |> List.forall (fun x-> x >= 2)
+                    && this.Players |> List.map isInSameLine |> List.forall (fun x -> x.IsNone)
+
+            member this.IsValidAndSafePosition position = this.IsValidPosition position && this.IsSafePosition position
+
             member this.HasWallInLines p1 p2 = hasWallInLines state p1 p2
             // member this.ViewSize = viewSize state
             member this.GetCross position = getCross state position
-            member this.GetNeighbours postion = [ top postion ; right postion; bottom postion; left postion ] |> Seq.filter this.IsValidPosition 
+            member this.GetNeighbours postion = [ top postion ; right postion; bottom postion; left postion ] |> Seq.filter this.IsValidAndSafePosition 
             member this.FindPath destination =  
                 let config:AStar.Config<Position> = { Neighbours = this.GetNeighbours ; GCost = gScore; FCost = fScore; MaxIterations = None }
-                AStar.search this.Position destination config |> Option.map (Array.ofSeq >> Array.rev )
+                AStar.search this.Position destination config 
+                |> Option.map (Array.ofSeq >> Array.rev )
+
 
             // member this.TryLeftOrRight = tryLeftOrRight state
             // member this.TryTopOrBottom = tryTopOrBottom state
             member this.StepTo p = stepTo this.Position p
-            member this.StepToValid p = if this.IsValidPosition p then stepTo this.Position p else None
             member this.StepLeftRight p = stepLeftRight this.Position p
             member this.StepTopDown p = stepTopDown this.Position p
             member this.BoardSize = state.Board.Size
@@ -331,19 +351,21 @@ module State =
             member this.TryGoRight = if this.Position |> right |> this.IsValidPosition then Some Right else None
             member this.TryGoUp = if this.Position |> top |> this.IsValidPosition then Some Up else None
             member this.TryGoDown = if this.Position |> bottom |> this.IsValidPosition then Some Down else None
-
-            member this.Shoot p = getShoot this.Position p
             
             member this.Debug arg = logger.Debug(arg |> fst ,arg |> snd)
             member this.Info arg = logger.Information(arg |> fst ,arg |> snd)
+
+            member this.IsPlayer p = this.Players |> List.exists (fun x -> x.X = p.X && x.Y = p.Y )
+            member this.IsAggressiveEnemy p = this.AggressiveEnemies |> List.exists (fun x -> x.X = p.X && x.Y = p.Y )
+            member this.IsNeutral p = this.NeutralEnemies |> List.exists (fun x -> x.X = p.X && x.Y = p.Y )
          }
 
 module Agent = 
 
-    let tryLeftOrRight (state:IState) = 
+    let tryLeftOrRight (state:IState) =
         
         [ left state.Position ; right state.Position ]
-            |> List.filter state.IsValidPosition
+            |> List.filter state.IsValidPosition 
             |> function
             | h :: t -> state.StepLeftRight h
             | _ -> None
@@ -355,20 +377,56 @@ module Agent =
             | h :: t -> state.StepTopDown h
             | _ -> None
 
+    let getAwayFromPlayers (state:IState) = 
+
+        let from = state.Players |> List.filter (fun x -> state.DistanceFrom x <= 2) |> List.sortBy state.DistanceFrom
+        if from.Length = 0
+        then None
+        else
+            let moves = state.GetNeighbours state.Position |> Seq.map state.StepTo |> Seq.toList
+            match moves with
+            | h::_ -> 
+                state.Debug ("GETTING AWAY !!!! ", Array.empty)
+                h
+    //            if state.IsOnLeft h
+    //            then state.TryGoLeft
+    //            else None
+    //            <|> fun () -> if state.IsOnRight h
+    //                            then state.TryGoRight
+    //                            else None
+    //            <|> fun () -> if state.IsOnTop h
+    //                          then state.TryGoUp
+    //                          else None
+    //            <|> fun () -> if state.IsOnBottom h
+    //                          then state.TryGoDown
+    //                          else None
+            | _ -> None
     let getAway (state:IState) = 
 
          
         let from' = state.AggressiveEnemies @ state.Players |> List.filter (fun x -> state.DistanceFrom x <= 2) |> List.sortBy state.DistanceFrom
-
-        match from' with
-        | h::_ -> 
-            state.Debug ("GETTING AWAY !!!! ", Array.empty)
-            if state.IsOnLeft h then state.TryGoLeft
-            elif state.IsOnRight h then state.TryGoRight
-            elif state.IsOnTop h then state.TryGoUp
-            elif state.IsOnBottom h then state.TryGoDown
-            else None
-        | _ -> None
+        if from'.Length = 0
+        then None
+        else
+            
+            let moves = state.GetNeighbours state.Position |> Seq.map state.StepTo |> Seq.toList
+            match moves with
+            | h::_ -> 
+                state.Debug ("GETTING AWAY !!!! ", Array.empty)
+                h
+    //            if state.IsOnLeft h
+    //            then state.TryGoLeft
+    //            else None
+    //            <|> fun () -> if state.IsOnRight h
+    //                            then state.TryGoRight
+    //                            else None
+    //            <|> fun () -> if state.IsOnTop h
+    //                          then state.TryGoUp
+    //                          else None
+    //            <|> fun () -> if state.IsOnBottom h
+    //                          then state.TryGoDown
+    //                          else None
+            | _ -> None
 
     let findNearestNeutral (state:IState) = 
 
@@ -380,10 +438,13 @@ module Agent =
         then None
         else 
             let bestPath = paths |>  List.minBy (fun p -> p |> Array.length) 
-            let p = if bestPath.Length = 0 then bestPath.[0] else bestPath.[1]
-            state.Debug ("GOTO NEUTRAL ! {@Position}", [|p|])
-            let move = state.StepTo p
-            move
+            if bestPath.Length = 1
+            then 
+                state.Debug ("GOTO NEUTRAL ! {@Position}", [|bestPath.[0]|])
+                Some Move.Idle
+            else
+                state.Debug ("GOTO NEUTRAL ! {@Position}", [|bestPath.[1]|])
+                state.StepTo bestPath.[1]
 
     let tryTouchNeutral (state:IState) = 
         state.Debug ("\t▶ TRY TO TOUCH NEUTRAL", [||])
@@ -394,60 +455,78 @@ module Agent =
                 |> function
                 | [] -> None
                 | h::t -> h
-       
+                
+    let tryGoToNeutral (state:IState) = 
+        state.Debug ("\t▶ TRY GO TO NEUTRAL", [||])
+        state.NeutralEnemies 
+                |> List.map state.FindPath 
+                |> List.choose id
+                |> List.filter (fun p -> p |> Array.length = 1)
+                |> List.sortBy (fun p -> p |> Array.length)
+                |> function
+                | [] -> None
+                | h::t ->
+                    state.Debug ("🏃‍♀️ GO TO ENEMY {@Position}}", [|h.[1]|])
+                    let move = state.StepTo h.[1]
+                    move
 
     let tryShoot (state:IState) = 
-        state.Debug ("\t▶ TRY TO SHOOT", [||])
+        if state.CanFire |> not
+        then None
+        else
+            let shouldShot = state.AllEnemies  
+                            |> List.filter (fun e -> (Distance.isInSameLine state.Position e).IsSome)
+                            |> List.filter (fun e -> state.HasWallInLines state.Position e |> not  )
+                            |> List.sortByDescending(fun x -> 
+                                            if state.IsPlayer x then 100 , Distance.manhattan state.Position x
+                                            elif state.IsAggressiveEnemy x then 50,Distance.manhattan state.Position x
+                                            else 25, Distance.manhattan state.Position x
+                                         )
+            if shouldShot.Length = 0
+            then 
+                state.Debug ("NO PATH TO ANY ENEMY", [||])
+                None
+            else
+                state.Debug ("🔫 SHOOT ENEMY {@Position}}", [|shouldShot.Head|])
+                getShoot state.Position shouldShot.Head
 
-        state.AllEnemies  
-        |> List.filter (fun e -> (Distance.isInSameLine state.Position e).IsSome)
-        |> List.filter (fun e -> state.HasWallInLines state.Position e |> not  )
-        |> List.sortBy state.DistanceFrom 
-        |> List.map state.Shoot
-        |> function
-                | [] -> 
-                    state.Debug ("NO ENEMY TO Shoot", [||])
-                    None
-                | h::t -> 
-                    state.Debug ("🔫 SHOOT ENEMY {@Move}}", [|h|])
-                    h
 
     let tryToGetInline (state:IState) = 
-        state.AllEnemies 
-        |> List.collect state.GetCross 
-        |> List.map state.FindPath 
-        |> List.choose id
-        |> List.sortBy (fun p -> p |> Array.length)
-        |> function
-                | [] -> 
-                    state.Debug ("NO PATH TO ANY ENEMY", [||])
-                    None
-                | h::t -> 
-                    let next = h.[1]
-                    let move = state.StepToValid next
-                    match move with
-                    | Some m -> state.Debug ("🏃‍♀️ GO TO ENEMY {@Position}}", [|next|]) 
-                    | None -> state.Debug ("😭 NO PATH TO ANY ENEMY", [||])
-                    move
-            
-    let tryWaitPlayer (state:IState) = 
-        state.Players
-        |> List.filter (fun x -> x.X = state.Position.X + 1  || x.X = state.Position.X - 1 || 
-                                 x.Y = state.Position.Y + 1 || x.Y = state.Position.Y - 1  )
-        |> function
-           | [] -> None
-           | h::_ -> Some Idle
-
-    let tryAttack (state:IState) =  
-
-        state.Debug ("ℹ TRY TO ATTACK", [||])
-        tryTouchNeutral(state)
-        <|> (fun () ->  tryShoot(state) )
-        <|> (fun () ->  tryToGetInline(state) )
-        <|> (fun () -> tryWaitPlayer state)
+        let paths = 
+            state.AllEnemies 
+            |> List.collect state.GetCross 
+            |> List.map state.FindPath 
+            |> List.choose id
         
+        if paths.Length = 0 
+        then 
+            state.Debug ("😭 NO PATH TO ANY ENEMY", [||])
+            None
+        else
+            let validPath = paths |>  List.filter (fun p -> p |> Array.length > 1)
+            match validPath with 
+            | [] -> 
+                state.Debug ("😭 NO PATH TO ANY ENEMY", [||])
+                None
+            | _ -> 
+                // TODO : maybe not the best 
+                let best = validPath |> List.minBy (fun p -> p |> Array.length) |> fun x -> x.[1]
+                state.Debug ("🏃‍♀️ GO TO ENEMY {@Position}}", [|best|])
+                let move = state.StepTo best
+                move
 
-    
+    let tryWaitPlayer (state:IState) =
+        if state.CanFire
+        then
+            state.Players
+            |> List.filter (fun x -> x.X = state.Position.X + 1  || x.X = state.Position.X - 1 || 
+                                     x.Y = state.Position.Y + 1 || x.Y = state.Position.Y - 1  )
+            |> function
+               | [] -> None
+               | h::_ -> Some Idle
+        else
+            None
+
     let visitMaze (state:IState) =
         state.Debug ("ℹ VISIT MAZE", [||]) 
 
@@ -460,22 +539,20 @@ module Agent =
         state.Debug ("👀 try to see {@Position}", [|borderToSee|])
         
         borderToSee 
-        >>= state.FindPath
+        >>=  state.FindPath
         |> function
             | None -> 
-                state.Debug ("⛔ no path found", [||])
-                None
-            | Some p -> p.[1] |> state.StepToValid
+                let topLeft = {X = 0; Y = 0}
+                let topRight = {X= state.BoardSize.Width - 1; Y = 0}
+                let bottomLeft = {X= 0; Y = state.BoardSize.Height - 1}
+                let bottomRight = {X= state.BoardSize.Width - 1; Y = state.BoardSize.Height - 1}
 
+                let cornerToGo = [topLeft; topRight; bottomLeft; bottomRight] |> List.maxBy state.DistanceFrom
+                state.Debug ("⛔ Go to corner {@Position} ", [|cornerToGo|])
+                cornerToGo |> state.FindPath |> Option.map (fun p -> p.[1]) |> Option.bind state.StepTo
 
-    /// use when cannot shot
-    let defenceMove (state:IState) = 
-        state.Debug ("ℹ TRY TO DEFEND", [||])
-        
-        getAway state
-        <|> (fun () -> findNearestNeutral state)
-        
-  
+            | Some p -> p.[1] |> state.StepTo
+
     let randomMove(state:IState) =
       state.Info ("🙏 DO RANDOM", [||])
       [ Up ; Down ; Left ; Right] |> List.minBy (fun _ -> Guid.NewGuid())
@@ -488,10 +565,14 @@ module Agent =
 
         state.Debug("{@Matrix}", [|state.Matrix.Print()|]) 
 
-        if state.CanFire
-        then tryAttack state
-        else defenceMove state
-        
-        <|> (fun () -> visitMaze state)
+        getAwayFromPlayers(state)
+        <|> fun () ->  tryTouchNeutral(state)
+        <|> fun () ->  tryGoToNeutral(state)
+        <|> fun () ->  tryShoot(state)
+        <|> fun () ->  tryToGetInline(state)
+        <|> fun () -> tryWaitPlayer state
+        <|> fun () -> getAway state
+        <|> fun () -> findNearestNeutral state
+        <|> fun () -> visitMaze state
         |> Option.defaultWith (fun () -> randomMove state)
-      
+        

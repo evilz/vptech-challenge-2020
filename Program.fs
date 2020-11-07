@@ -1,124 +1,72 @@
-
-
-
-
-
-
-
-// [<EntryPoint>]
-// let main _ =
-//     let testArray = 
-//         [
-//             [' ';' ';' ';' ';' ';' ';' ';' ';' ';' ']
-//             [' ';' ';' ';' ';' ';' ';' ';' ';' ';' ']
-//             [' ';' ';' ';' ';' ';' ';' ';' ';' ';' ']
-//             [' ';' ';' ';' ';' ';' ';' ';'X';'X';' ']
-//             [' ';' ';' ';' ';' ';' ';'X';'X';' ';' ']
-//             [' ';' ';' ';' ';' ';' ';'X';' ';' ';' ']
-//             [' ';' ';' ';' ';'X';'X';'X';' ';'X';'X']
-//             [' ';' ';' ';' ';'X';' ';' ';' ';'X';' ']
-//             [' ';' ';' ';' ';'X';' ';'X';'X';'X';' ']
-//             [' ';' ';' ';' ';'X';' ';'X';' ';' ';' ']
-//             [' ';' ';' ';' ';'X';' ';'X';' ';' ';' ']
-//             [' ';' ';' ';' ';'X';' ';' ';' ';'X';' ']
-//             [' ';' ';' ';' ';' ';' ';'X';'X';'X';' ']
-//             [' ';' ';' ';' ';' ';' ';'X';' ';' ';' ']
-//             [' ';' ';' ';' ';' ';' ';'X';' ';' ';' ']
-//         ]
-//     let width, height = List.length testArray.[0], List.length testArray
-
-//     let start = 0, 0
-//     let goal = width - 1, height - 1
-
-//     let blocks = 
-//         testArray 
-//         |> List.mapi (fun y row -> 
-//             row 
-//                 |> List.mapi (fun x cell -> (x, y), cell = 'X')
-//                 |> List.filter (fun (_, blocked) -> blocked)
-//                 |> List.map (fun (pos, _) -> pos))
-//         |> List.concat |> Set.ofList
-    
-//     let neighbours (x, y) =
-//         let found = 
-//             [-1..1] |> List.collect (fun nx ->
-//             [-1..1] |> List.filter (fun ny -> ny <> nx || ny <> 0) |> List.map (fun ny -> x + nx, y + ny))
-//         found |> Seq.filter (fun (nx, ny) -> 
-//             nx > 0 && ny > 0 &&
-//             nx < width && ny < height &&
-//             not <| Set.contains (nx, ny) blocks)
-
-//     let gScore _ _ = 1.
-//     let fScore (x, y) (gx, gy) = 
-//         sqrt ((float gx - float x)**2. + (float gy - float y)**2.)
-
-//     match AStar.search start goal { neighbours = neighbours; gCost = gScore; fCost = fScore; maxIterations = None } with
-//     | Some path -> 
-//         printfn "Success! Solution:"
-//         testArray |> List.mapi (fun y row -> 
-//             row 
-//             |> List.mapi (fun x cell -> if Seq.contains (x, y) path then "#" else cell.ToString())
-//             |> String.concat ""
-//         ) |> List.iter (printfn "%s")
-//     | None -> printf "No Path Found"
-
-//     0
-
-
-
+module CodeChallenge.Program
 
 open System
 open Microsoft.AspNetCore.Builder
 open Microsoft.AspNetCore.Hosting
 open Microsoft.Extensions.Hosting
 open Microsoft.Extensions.DependencyInjection
-open Microsoft.AspNetCore.Http
 open Giraffe
-open FSharp.Control.Tasks.V2.ContextInsensitive
 open Giraffe.Serialization
 open System.Text.Json
 open System.Text.Json.Serialization
 open Giraffe.SerilogExtensions
 open Serilog
+open Microsoft.Extensions.Logging
 
 
 let webApp =
     choose [
-        route "/name"   >=> json {|name = "Evilz" ; email="vbourdon@veepee.com"|}
-        POST >=> route "/move"       >=> Handlers.moveHandler
+        POST >=> route "/move" >=> Handlers.moveHandler
+        route "/name"   >=> Handlers.nameHandler
+        route "/status"   >=> Handlers.nameHandler
+        route "/health"   >=> Handlers.nameHandler
+        route "/"   >=> Handlers.nameHandler
         RequestErrors.NOT_FOUND "What do you want ???" ]
 
-let appWithLogger = SerilogAdapter.Enable(webApp)
+type Startup() =
+    member __.ConfigureServices (services : IServiceCollection) =
+        let sp  = services.BuildServiceProvider()
+        let env = sp.GetService<IWebHostEnvironment>()
+        if env.IsDevelopment()
+        then
+            Log.Logger <- 
+              LoggerConfiguration()
+                .MinimumLevel.Debug()
+                .Destructure.FSharpTypes()
+                .WriteTo.Console()
+                .CreateLogger()
+            
+        else
+            Log.Logger <- 
+              LoggerConfiguration()
+                .MinimumLevel.Debug()
+                .Destructure.FSharpTypes()
+                .WriteTo.Console(Logging.VeepeeJsonFormatter())
+                .CreateLogger()
 
-let configureApp (app : IApplicationBuilder) =
-    // Add Giraffe to the ASP.NET Core pipeline
-    app.UseGiraffe appWithLogger
+        // Add Giraffe dependencies
+        services.AddGiraffe() |> ignore
+        let options = JsonSerializerOptions(PropertyNamingPolicy = JsonNamingPolicy.CamelCase)
+        options.Converters.Add(JsonFSharpConverter(unionEncoding = JsonUnionEncoding.UnwrapFieldlessTags, unionTagNamingPolicy = JsonNamingPolicy.CamelCase))
+        services.AddSingleton<IJsonSerializer>(SystemTextJsonSerializer (options)) |> ignore
 
+    member __.Configure (app : IApplicationBuilder)
+                        (env : IHostingEnvironment)
+                        (loggerFactory : ILoggerFactory) =
+        // Add Giraffe to the ASP.NET Core pipeline
+        app.UseGiraffe (SerilogAdapter.Enable(webApp))   
 
-Log.Logger <- 
-  LoggerConfiguration()
-    .MinimumLevel.Debug()
-    .Destructure.FSharpTypes()
-    .WriteTo.Console(Logging.VeepeeJsonFormatter())
-    .CreateLogger()
-
-let configureServices (services : IServiceCollection) =
-    // Add Giraffe dependencies
-    services.AddGiraffe() |> ignore
-    let options = JsonSerializerOptions(PropertyNamingPolicy = JsonNamingPolicy.CamelCase)
-    options.Converters.Add(JsonFSharpConverter(unionEncoding = JsonUnionEncoding.UnwrapFieldlessTags, unionTagNamingPolicy = JsonNamingPolicy.CamelCase))
-    services.AddSingleton<IJsonSerializer>(SystemTextJsonSerializer (options)) |> ignore
-
-[<EntryPoint>]
-let main _ =
+let CreateHostBuilder(args:string[] ) = 
     Host.CreateDefaultBuilder()
         .ConfigureWebHostDefaults(
             fun webHostBuilder ->
-                webHostBuilder.UseUrls("http://0.0.0.0:5000")
-                    .Configure(configureApp)
-                    .ConfigureServices(configureServices)
+                webHostBuilder
+                    .UseUrls("http://0.0.0.0:5000")
+                    .UseStartup<Startup>()
                     |> ignore)
-                    
+[<EntryPoint>]
+let main args =
+    CreateHostBuilder(args)
         .Build()
         .Run()
     0

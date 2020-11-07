@@ -1,0 +1,7 @@
+.ionide/symbolCache.db
+
+.fake
+.ionide
+**/bin/*
+**/obj/*
+

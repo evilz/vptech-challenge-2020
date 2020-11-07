@@ -1,4 +1,4 @@
-module AStar
+module CodeChallenge.AStar
 
 type Config<'a> = 
     {

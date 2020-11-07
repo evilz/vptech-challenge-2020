@@ -1,4 +1,4 @@
-module Logging
+module CodeChallenge.Logging
     
 open Serilog.Events
 open Serilog.Formatting.Json
